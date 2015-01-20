@@ -13,6 +13,10 @@
 		227127DF19F62A8000EB7E53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227127DE19F62A8000EB7E53 /* Images.xcassets */; };
 		227127E219F62A8000EB7E53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227127E019F62A8000EB7E53 /* LaunchScreen.xib */; };
 		227127EE19F62A8100EB7E53 /* FlickrGallerySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227127ED19F62A8100EB7E53 /* FlickrGallerySwiftTests.swift */; };
+		227127F919F62BAF00EB7E53 /* FlickrHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227127F719F62BAF00EB7E53 /* FlickrHelper.swift */; };
+		227127FA19F62BAF00EB7E53 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227127F819F62BAF00EB7E53 /* FlickrPhoto.swift */; };
+		227127FC19F6333700EB7E53 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227127FB19F6333700EB7E53 /* GalleryViewController.swift */; };
+		227127FE19F6342600EB7E53 /* FlickrCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227127FD19F6342600EB7E53 /* FlickrCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		227127E719F62A8100EB7E53 /* FlickrGallerySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrGallerySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		227127EC19F62A8100EB7E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		227127ED19F62A8100EB7E53 /* FlickrGallerySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrGallerySwiftTests.swift; sourceTree = "<group>"; };
+		227127F719F62BAF00EB7E53 /* FlickrHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrHelper.swift; sourceTree = "<group>"; };
+		227127F819F62BAF00EB7E53 /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = "<group>"; };
+		227127FB19F6333700EB7E53 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		227127FD19F6342600EB7E53 /* FlickrCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,12 @@
 		227127D419F62A7F00EB7E53 /* FlickrGallerySwift */ = {
 			isa = PBXGroup;
 			children = (
+				227127F719F62BAF00EB7E53 /* FlickrHelper.swift */,
+				227127F819F62BAF00EB7E53 /* FlickrPhoto.swift */,
 				227127D719F62A8000EB7E53 /* AppDelegate.swift */,
 				227127D919F62A8000EB7E53 /* ViewController.swift */,
+				227127FD19F6342600EB7E53 /* FlickrCollectionViewCell.swift */,
+				227127FB19F6333700EB7E53 /* GalleryViewController.swift */,
 				227127DB19F62A8000EB7E53 /* Main.storyboard */,
 				227127DE19F62A8000EB7E53 /* Images.xcassets */,
 				227127E019F62A8000EB7E53 /* LaunchScreen.xib */,
@@ -212,6 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227127F919F62BAF00EB7E53 /* FlickrHelper.swift in Sources */,
+				227127FE19F6342600EB7E53 /* FlickrCollectionViewCell.swift in Sources */,
+				227127FA19F62BAF00EB7E53 /* FlickrPhoto.swift in Sources */,
+				227127FC19F6333700EB7E53 /* GalleryViewController.swift in Sources */,
 				227127DA19F62A8000EB7E53 /* ViewController.swift in Sources */,
 				227127D819F62A8000EB7E53 /* AppDelegate.swift in Sources */,
 			);
@@ -337,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlickrGallerySwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -347,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlickrGallerySwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +423,7 @@
 				227127F319F62A8100EB7E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		227127F419F62A8100EB7E53 /* Build configuration list for PBXNativeTarget "FlickrGallerySwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +432,7 @@
 				227127F619F62A8100EB7E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
